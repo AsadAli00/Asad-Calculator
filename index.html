@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <script>
+        function getvalue(num){
+            var res = document.getElementById("result");
+            res.value +=num;
+        } 
+        function clearbtn(){
+            var res = document.getElementById("result");
+            res.value ="";
+        }
+        function set(){
+            var res = document.getElementById("result");
+            res.value =  eval(result.value);
+        }
+        
+
+    </script>
+    <div class="Mian">
+        <h1 class="value" style="color: aqua;">Asad Calculator</h1>
+    <form action="" class = "Calculator" name="Cal">
+        <input type="texts" class="value" id="result" name="txt" readonly="" placeholder="0">
+        <span class="num clear" onclick="clearbtn()">c</span>
+        <span class="num" onclick="getvalue('/')">/</span>
+        <span class="num" onclick="getvalue('*')">*</span>
+        <span class="num" onclick="getvalue(7)">7</span>
+        <span class="num" onclick="getvalue(8)">8</span>
+        <span class="num" onclick="getvalue(9)">9</span>
+        <span class="num" onclick="getvalue('-')">-</span>
+        <span class="num" onclick="getvalue(4)">4</span>
+        <span class="num" onclick="getvalue(5)">5</span>
+        <span class="num" onclick="getvalue(6)">6</span>
+        <span class="num plus" onclick="getvalue('+')">+</span>
+        <span class="num" onclick="getvalue(3)">3</span>
+        <span class="num" onclick="getvalue(2)">2</span>
+        <span class="num" onclick="getvalue(1)">1</span>
+        <span class="num" onclick=" getvalue(0)">0</span>
+        <span class="num" onclick=" getvalue(00)">00</span>
+        <span class="num" onclick=" getvalue('.')">.</span>
+        <span class="num equal" onclick="set()">=</span>
+
+    </form>
+</div>
+</body>
+</html>
